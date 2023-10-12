@@ -1,3 +1,54 @@
+```sh
+
+conda env create -f environment.yaml
+
+pip install omegaconf
+
+pip install torch
+
+pip install diffusers
+
+pip show diffusers
+
+pip install diffusers=0.11.0
+
+pip install transformers
+
+pip install einops
+
+pip install torchvision
+
+pip install imageio
+
+cd models/MotionLoRA/
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanLeft.ckpt
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanRight.ckpt
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingAnticlockwise.ckpt
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingClockwise.ckpt
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltUp.ckpt
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt
+
+wget https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomOut.ckpt
+
+cd ../../
+
+cd models/StableDiffusion/
+
+wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt
+
+
+```
+
+
+
 # AnimateDiff
 
 This repository is the official implementation of [AnimateDiff](https://arxiv.org/abs/2307.04725).
