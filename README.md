@@ -1,3 +1,9 @@
+
+https://twitter.com/picoflam/status/1712241919760158967?s=20
+
+https://weibo.com/1727858283/Nnu4vBURj
+
+
 ```sh
 
 conda env create -f environment.yaml
