@@ -30,6 +30,93 @@ sudo df -lh ~/data
 
 ```
 
+```sh
+
+sudo apt-get install git-lfs
+
+git lfs install
+
+git clone https://huggingface.co/runwayml/stable-diffusion-v1-5 models/StableDiffusion/
+
+pip install gdown
+
+# to upgrade
+pip install --upgrade gdown
+
+
+```
+
+# model
+
+https://huggingface.co/guoyww/animatediff
+
+
+```sh
+
+# local WSL run
+scp -P 9000 /mnt/d/Download/mm_sd_v14.ckpt user@<IP>:~/temp
+
+scp -P 9000 /mnt/d/Download/mm_sd_v15.ckpt user@<IP>:~/temp
+
+# https://huggingface.co/guoyww/animatediff
+scp -P 9000 /mnt/d/Download/mm_sd_v15_v2.ckpt user@<IP>:~/temp
+
+# remote
+
+mv ~/temp/mm_sd_v14.ckpt models/Motion_Module/
+
+mv ~/temp/mm_sd_v15.ckpt models/Motion_Module/
+
+```
+
+```sh
+
+bash download_bashscripts/1-ToonYou.sh
+
+bash download_bashscripts/2-Lyriel.sh
+
+bash download_bashscripts/3-RcnzCartoon.sh
+
+bash download_bashscripts/4-MajicMix.sh
+
+bash download_bashscripts/5-RealisticVision.sh
+
+bash download_bashscripts/6-Tusun.sh
+
+bash download_bashscripts/7-FilmVelvia.sh
+
+bash download_bashscripts/8-GhibliBackground.sh
+
+```
+
+```sh
+
+pip install accelerate
+
+python -m scripts.animate --config configs/prompts/v2/5-RealisticVision-MotionLoRA.yaml
+
+python -m scripts.animate --config configs/prompts/v2/5-RealisticVision.yaml
+
+```
+
+
+
+# Pyhon Env
+
+https://zhuanlan.zhihu.com/p/508319902
+
+
+```sh
+
+
+conda env create -f environment.yaml
+
+conda activate animatediff
+
+pip install ipykernel
+
+
+```
 
 
 
