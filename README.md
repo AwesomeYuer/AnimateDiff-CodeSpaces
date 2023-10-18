@@ -1,4 +1,38 @@
 
+# prepare disk
+
+```sh
+
+sudo uname
+
+sudo lsb_release -a
+
+# mount
+
+df -h
+
+sudo mkdir /userdata
+
+sudo mount /dev/sda1 /userdata
+
+sudo mkdir ~/data
+
+sudo mount /dev/sda1 ~/data
+
+sudo chmod 777 ~/data
+
+sudo chmod 777 /userdata
+
+sudo du -sh ~/data
+
+sudo df -lh ~/data
+
+
+```
+
+
+
+
 https://twitter.com/picoflam/status/1712241919760158967?s=20
 
 https://weibo.com/1727858283/Nnu4vBURj
